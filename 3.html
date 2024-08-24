@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB-JavaScript</title>
+    <meta charset="utf-8">
+    <script src="color.js"></script>
+</head>
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <input type = "button" value = "night" onclick = "
+        nightdayhandler(this);
+    ">
+    <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+    </ol>
+    <h2><a href="https://velog.io/@ymh0951/JavaScript%EB%9E%80" target = "_blank" title = "자세한 내용 링크">JavaScript</h2></a>
+    <p><h4>자바스크립트(JavaScript)란?</h4>
+        <font-size : 50px color : red>자바스크립트(JavaScript)</font-size>는 객체(object) 기반의 스크립트 언어이다.<br>
+        HTML로는 웹의 내용을 작성하고, CSS로는 웹을 디자인하며, 자바스크립트로는 웹의 동작을 구현할 수 있다.<br>
+        자바스크립트는 주로 웹 브라우저에서 사용되나, Node.js와 같은 프레임워크를 사용하면 서버 측 프로그래밍에서도 사용할 수 있다.<br>
+        현재 컴퓨터나 스마트폰 등에 포함된 대부분의 웹 브라우저에는 자바스크립트 인터프리터가 내장되어 있다.
+    </p>
+    <input type = "button" value = "night" onclick = "
+        let target2 = document.querySelector('body');
+    if(self.value === 'night'){
+        target2.style.backgroundColor = 'black';
+        target2.style.color = 'white';
+        self.value = 'day'
+
+    } else {
+        target2.style.backgroundColor = 'white';
+        target2.style.color = 'black';
+        self.value = 'night'
+    }
+    ">
+</body>
+</html>
